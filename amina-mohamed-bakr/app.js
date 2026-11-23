@@ -1276,16 +1276,16 @@
       }
     }
 
-    function getShareInviteMessage() {
-      return 'صدقة جارية في محبة الغالية الحاجة أمينة محمد بكر رحمها الله وأسكنها الفردوس الأعلى 🌿\nاذكروا طيبتها وجدعنتها بدعوة صادقة من قلوبكم:\n«اللهم اغفر للحاجة أمينة محمد بكر وارحمها، وعافها واعفُ عنها، واجعل قبرها روضةً من رياض الجنة واجمعنا بها في الفردوس الأعلى.»';
+    function getPageShareUrl() {
+      return location.origin + location.pathname;
     }
 
     function copyShareInvitation() {
-      copyText(getShareInviteMessage() + '\n' + location.origin + location.pathname);
+      copyText(getPageShareUrl());
     }
 
     function sendShareInvitationWhatsApp() {
-      shareWhatsAppText(getShareInviteMessage() + '\n' + location.origin + location.pathname);
+      shareWhatsAppText(getPageShareUrl());
     }
 
     // ---------------- INITIALIZATION ----------------
